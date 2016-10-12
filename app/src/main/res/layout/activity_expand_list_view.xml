@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_expand_list_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zwz.com.myLib.ui.ExpandListViewActivity">
+
+    <zwz.com.myLib.view.pullableview.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <include layout="@layout/refresh_head"/>
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <zwz.com.myLib.view.pullableview.PullableExpandableListView
+            android:id="@+id/exListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="1px"
+            android:groupIndicator="@null"
+            android:childIndicator="@null"
+            />
+
+        <include layout="@layout/load_more"/>
+
+    </zwz.com.myLib.view.pullableview.PullToRefreshLayout>
+
+
+</RelativeLayout>
