@@ -143,6 +143,9 @@ public class ExpandListViewActivity extends AppCompatActivity {
             return false;
         }
 
+
+
+
         @Override
         public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
 
